@@ -1,7 +1,6 @@
-# curriculum-databases-projects-template
+# PostgreSQL Vet Clinic Database
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+This is a postgreSQL database for Vet clinic data. It has tables that contain animals' information. In the tables, user can insert data into it and query it.
 
 
 ## Getting Started
@@ -15,23 +14,18 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Authors
 
-👤 **Author1**
+👤 **Edward Odhiambo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@whit3d](https://github.com/white3d)
+- Twitter: [@odhiambo_ed](https://twitter.com/odhiambo_ed)
+- LinkedIn: [Edward Odhiambo](https://www.linkedin.com/in/edward-odhiambo-6a462a21b/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/white3d/PostgreSQL-Vet-Clinic-Database/issues).
 
 ## Show your support
 
@@ -39,9 +33,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+* [PostgreSQL Organization](https://www.postgresql.org/) for the amazing [Documentation](https://www.postgresql.org/docs/) on PostgreSQL.
 
 ## 📝 License
 
