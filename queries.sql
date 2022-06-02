@@ -15,6 +15,11 @@ UPDATE animals SET species = 'pokemon' WHERE species = NULL;
 DELETE FROM animals;
 ROLLBACK BeforeDelete;
 
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species = 'pokemon' WHERE species = NULL;
+DELETE FROM animals;
+ROLLBACK BeforeDelete;
+
 BEGIN;
 /*Delete all animals born after Jan 1st, 2022.*/
 DELETE FROM animals WHERE date_of_birth > '2022-01-01';
