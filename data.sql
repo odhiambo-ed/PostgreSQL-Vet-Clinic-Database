@@ -25,3 +25,14 @@ INSERT INTO owners(full_name, age) VALUES('Jodie Whittaker', 38);
 INSERT INTO species(name) Values('Pokemon');
 INSERT INTO species(name) Values('Digimon');
 
+/* Begin transaction */
+BEGIN;
+
+/* If the name ends in "mon" it will be Digimon */
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+
+/* All other animals are Pokemon */
+UPDATE animals SET species_id = 1 WHERE name NOT LIKE '%mon';
+
+COMMIT;
+
