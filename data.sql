@@ -64,4 +64,14 @@ INSERT INTO vets(name, age, date_of_graduation) VALUES('Jack Harkness', 38, '200
 
 COMMIT;
 
+/*Begin transaction*/
+BEGIN;
+
+-- Insert the following data for specialties
+INSERT INTO specializations(species_id, vet_id) VALUES(1, 1);
+INSERT INTO specializations(species_id, vet_id) VALUES(2, 3);
+INSERT INTO specializations(species_id, vet_id) VALUES(1, 3);
+INSERT INTO specializations(species_id, vet_id) VALUES(2, 4);
+
+COMMIT;
 
