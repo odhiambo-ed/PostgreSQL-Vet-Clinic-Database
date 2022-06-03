@@ -58,3 +58,34 @@ CREATE TABLE vets (
     date_of_graduation DATE,
     PRIMARY KEY(id)
 );
+
+COMMIT;
+
+/*Begin transaction*/
+BEGIN;
+
+-- Create the specialization table with two columns and foreign key constraints
+CREATE TABLE specializations(
+    species_id INT,
+    vet_id INT,
+    PRIMARY KEY(species_id, vet_id),
+    CONSTRAINT species_id_fk FOREIGN KEY(species_id) REFERENCES species(id),
+    CONSTRAINT vet_id_fk FOREIGN KEY(vet_id) REFERENCES vets(id)
+);
+
+COMMIT;
+
+/*Begin transaction*/
+BEGIN;
+
+-- Create the visists table
+CREATE TABLE visits(
+    animals_id INT,
+    vets_id INT,
+    date_of_visit DATE,
+    PRIMARY KEY(animals_id, vets_id, date_of_visit),
+    CONSTRAINT animal_id_fk FOREIGN KEY(animals_id) REFERENCES animals(id),
+    CONSTRAINT vet_id_fk FOREIGN KEY(vets_id) REFERENCES vets(id)
+);
+
+COMMIT;
